@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Cyril Fischer</title>
     <link href="./css/reset.css" rel="stylesheet">
+    <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link href="./images/favicon.png" rel="shortcut icon" />
 
     <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script href="./js/menu.js"></script>
-  </head>
-  <body>
+    <script src="./js/menu.js"></script>
+</head>
 
-  </body>
+<body>
+    <div class="container">
+        <div class="menuTopContainer">
+            <div class="menuTop">
+                <i class="fa fa-user menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-envelope menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-graduation-cap menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-picture-o menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-bar-chart menuIcon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="dragMe dragHorizontal">
+            <div class="menu">
+                <i id="rotate" class="fa fa-repeat" aria-hidden="true"></i>
+                <i class="fa fa-user menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-envelope menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-graduation-cap menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-picture-o menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-bar-chart menuIcon" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="drop">
+            <div class="trashDrop"></div>
+            <div class="trashDrop2"></div>
+            <div class="trash">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
