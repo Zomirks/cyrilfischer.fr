@@ -1,15 +1,30 @@
 body {
     background: #263238;
-    height: 1000px;
+    height: 200vh;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.textBienvenue {
+    position: absolute;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
 }
 
 .container {
-    position: fixed;
-    height: 100vh;
     width: 100%;
 }
 
 .dragMe {
+  z-index: 2;
     display: flex;
     padding: 10px;
     position: fixed;
@@ -128,6 +143,7 @@ body {
 }
 
 .trash {
+  z-index: 2;
     background-color: crimson;
     border-radius: 50%;
     position: fixed;
@@ -151,4 +167,59 @@ body {
 
 .ui-state-highlight {
     transform: scale(1.5);
+}
+
+
+/*****          Parcours         *****/
+
+.parcours {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barreTemps {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barreFond {
+    height: 10px;
+    width: 85%;
+    background-color: aliceblue;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.flecheBarreTemps {
+    width: 0px;
+    border: 20px solid transparent;
+    border-left: 20px solid aliceblue;
+}
+
+.rondContainer {
+display: flex;
+align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 20px;
+    height: 100px;
+    line-height: 50px;
+}
+
+.rondRouge {
+    background-color: crimson;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.rondRouge:hover {
+  height: 50px;
+  width: 50px;
 }
