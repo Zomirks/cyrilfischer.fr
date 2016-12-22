@@ -6,16 +6,32 @@
     <title>Cyril Fischer</title>
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" media="screen">
     <link href="./images/favicon.png" rel="shortcut icon" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/menuMobile.js"></script>
 </head>
 
 <body>
     <div class="container">
+        <div class="mobile">
+            <div class="menuMobile">
+                <i class="fa fa-user menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-graduation-cap menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-bar-chart menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-picture-o menuIcon" aria-hidden="true"></i>
+                <i class="fa fa-envelope menuIcon" aria-hidden="true"></i>
+            </div>
+            <div class="hamburger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </div>
         <div class="menuTopContainer">
             <div class="menuTop">
                 <i class="fa fa-user menuIcon" aria-hidden="true"></i>
@@ -43,28 +59,29 @@
                 <i class="fa fa-trash-o" aria-hidden="true"></i>
             </div>
         </div>
-        <div class="header">
-            <div class="textBienvenue">
-                <p>
-                    Bienvenue sur mon site web, je m'appelle <strong>Cyril Fischer</strong> et je suis
-                </p>
-                <h1>Webdesigner / Intégrateur Web</h1>
+        <section>
+            <div class="header">
+                <div class="texteBienvenue">
+                    <p>
+                        Bienvenue sur mon site web, je m'appelle <strong>Cyril Fischer</strong> et je suis
+                    </p>
+                    <h1>Webdesigner / Intégrateur Web</h1>
+                </div>
+                <img src="./images/header_background.png" alt="" />
             </div>
-            <img src="./images/header_background.png" alt="" />
-        </div>
-        <div class="parcours">
-            <div class="rondContainer">
-                <div class="rondRouge Bac"></div>
-                <div class="rondRouge Bac"></div>
-                <div class="rondRouge Bac"></div>
-                <div class="rondRouge Bac"></div>
+            <div class="parcours">
+                <div class="rondContainer">
+                    <div class="rondRouge Bac"></div>
+                    <div class="rondRouge Bac"></div>
+                    <div class="rondRouge Bac"></div>
+                    <div class="rondRouge Bac"></div>
+                </div>
+                <div class="barreTemps">
+                    <div class="barreFond"></div>
+                    <div class="flecheBarreTemps"></div>
+                </div>
             </div>
-            <div class="barreTemps">
-            <div class="barreFond"></div>
-            <div class="flecheBarreTemps"></div>
-            </div>
-    </div>
-
+        </section>
     </div>
 </body>
 
