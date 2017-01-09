@@ -299,9 +299,6 @@ align-items: center;
   transform: scale(1.5);
 }
 
-.fa-user:nth-child(1) {
-  margin-top: 100px;
-}
 
 
 
@@ -351,4 +348,9 @@ align-items: center;
     height: 40px;
     width: 40px;
   }
+
+.fa-user:nth-child(1) {
+  margin-top: 100px;
+}
+
 }
